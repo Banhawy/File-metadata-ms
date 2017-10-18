@@ -16,22 +16,13 @@
         </style>
 </head>
 <body>
-    <h1>Image Search Abstraction Layer Microservice</h1>
-    <h2>Use this API to get Image urls and alt tags in JSON format</h2>
-    <h3>User Stories</h3>
-    <ul>
-        <li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
-        <li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
-        <li>I can get a list of the most recently submitted search strings.</li>
-    </ul>
-    <h3>Example usage:</h3>
-    <code>//Returns image urls and alt tags related to the search term "query" with an offset of 10 items </br>
-        https://adham-image-search-ms.herokuapp.com/api/search/linux?offset=10
-        </code>
-    <br>
-    <br>
-    <code>//Returns last 10 serach terms in database </br>
-        https://adham-image-search-ms.herokuapp.com/latest
-        </code>
+    <h1>File Metadata Microservice</h1>
+    <p>Submit a file to view its filesize.</p>
+    <form action="/upload" method="post" enctype="multipart/form-dat">
+        <label for="file">Select a file</label>
+        <input type="file" name="file">
+        <input type="submit">
+    </form>
+
 </body>
 </html>
